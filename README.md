@@ -17,7 +17,7 @@ RSRF is an easy to use format for electronic receipts. It was created to encoura
   "date": "2017-06-05",
   "time": "18:08:45.641",
   "timeZone": "GMT",
-  "currency": "ISK",
+  "currencyCode": "ISK",
   "totalAmount": 844,
   "entries": [
     {
