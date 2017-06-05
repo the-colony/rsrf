@@ -47,8 +47,11 @@ The spec defines three types of objects. A `receipt` is the base object. `receip
 
 ## Receipt
 
+### version
+Version of the spec used by the receipt.
+
 ### receiptID
-Required. String. This is the globally unique ID of your receipt.
+Required. String. This is the unique ID of your receipt within your store.
 
 ### sellerName
 Required. String. Name of the seller.
