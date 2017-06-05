@@ -43,7 +43,7 @@ RSRF is an easy to use format for electronic receipts. It was created to encoura
 
 ## The spec
 
-The spec defines three types of objects. A `receipt` is the base object. `receipt` contains `entry` objects that are lines that describe each purchased item. `receipt` objects can also contain `attachment` objects that are blobs of data submitted by the seller. Thie could for example contain a rendered version of the receipt.
+The spec defines three types of objects. A `receipt` is the base object. `receipt` contains `entry` objects that are lines that describe each purchased item. `receipt` objects can also contain `attachment` objects that are just blobs of data. an attachment could for example contain a rendered version of the receipt.
 
 ## Receipt
 
