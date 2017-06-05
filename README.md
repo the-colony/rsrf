@@ -1,13 +1,14 @@
 # Really Simple Receipt Format (RSRF)
 
-*`Please note that this is a draft and will not be finalized until the first user is in action.`*
+*`Please note that this is a draft. This will not be titled a final spec until the first user is in action.`*
 
 RSRF is an easy to use format for electronic receipts. It was crated to encourage and facilitate the creation of electronic receipts.
 
-Here's an example RSRF receipt
+#Example receipt
 
 ```
 {
+  "version": "1",
   "receiptID": "123-456-789",
   "sellerID": "987-654-321",
   "sellerSSN": "091179-4829",
@@ -39,3 +40,5 @@ Here's an example RSRF receipt
   ]
 }
 ```
+
+## the spec
