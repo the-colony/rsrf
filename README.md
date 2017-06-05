@@ -43,7 +43,9 @@ RSRF is an easy to use format for electronic receipts. It was crated to encourag
 
 ## The spec
 
-These are the values you can submit with your receipt:
+The spec defines three types of objects. A `receipt` is the base object. `receipt` contains `entry` objects that are lines that describe each purchased item. `receipt` objects can also contain `attachment` objects that are blobs of data submitted by the seller. Thie could for example contain a rendered version of the receipt.
+
+## Receipt
 
 ### receiptID
 Required. String. This is the globally unique ID of your receipt.
@@ -76,10 +78,46 @@ Optional. Time of purchase. String, formatted as specified by ISO-8601.
 Required. String. Code of the currency, as specified by ISO-4217.
 
 ### totalAmount
-Total paid amount
+Required. Total amount paid.
 
 ### entries
 Optional. List of `Entry` objects denoting what was purcased.
 
 ### attachments
 Optional. List of `Attachment` objects containing, for example, a rendered image or PDF of the receipt, the shop logo etc.
+
+## Entry
+
+### text
+Required. Description of the purchased product.
+
+### quantity
+Required. Quantity purchased, either number of units, weight etc.
+
+### unitPrice;
+Required. Price of each unit of the purchased product.
+
+### totalAmount
+Required. Total amount paid
+
+### productCode
+Optional. Product number (UPC) of the purchased product.
+
+### discountPercentage
+Optional. Discount percentage, if applicable. Formatted as a decimal (0.10 for 10%)
+Only one of discountAmount or discountPercentage can be specified.
+
+### discountAmount
+Optional. Discount amount, if applicable.
+Only one of discountAmount or discountPercentage can be specified.
+
+### vatPercentage
+Optional. Percentage of VAT paid.
+
+## Attachment
+
+### name
+Required. Human readable document name. Displayed to the user. A document extension is required for the system to identify the document type when serving it to the user.
+
+### data
+Required. Base64 encoded data of the document
