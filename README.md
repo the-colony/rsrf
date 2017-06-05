@@ -2,7 +2,7 @@
 
 *`Please note that this is a draft. This will not be titled a final spec until the first user is in action.`*
 
-RSRF is an easy to use format for electronic receipts. It was created to encourage and facilitate the creation of electronic receipts.
+RSRF is an easy to use format for electronic receipts. It was created to encourage and facilitate the creation and exchange of electronic receipts.
 
 ## Example receipt
 
