@@ -65,7 +65,7 @@ Optional. String. E-mail address of the seller.
 ### sellerGeoLocation
 Optional. String. Location of the shop as specified by ISO-6709.
 
-## timeZone
+### timeZone
 Required. Timezone of seller. String, formatted as specified by ISO-8601.
 
 ### date
