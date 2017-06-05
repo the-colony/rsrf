@@ -4,7 +4,7 @@
 
 RSRF is an easy to use format for electronic receipts. It was crated to encourage and facilitate the creation of electronic receipts.
 
-#Example receipt
+## Example receipt
 
 ```
 {
