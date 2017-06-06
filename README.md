@@ -21,7 +21,7 @@ RSRF is an easy to use format for electronic receipts. It was created to encoura
   "totalAmount": 844,
   "entries": [
     {
-      "text": "Milk 1L",
+      "text": "Soylent Industries Green no. 3",
       "productCode": "5690527101004",
       "quantity": 1,
       "unitPrice": 155,
@@ -29,7 +29,7 @@ RSRF is an easy to use format for electronic receipts. It was created to encoura
       "vatPercentage": 0.11
     },
     {
-      "text": "Whole grain bread, 770g",
+      "text": "Gurble Farms Whole Grain Bread",
       "productCode": "5690568010235",
       "quantity": 2,
       "unitPrice": 387,
