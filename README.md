@@ -11,7 +11,7 @@ RSRF is an easy to use format for electronic receipts. It was created to encoura
   "version": "1",
   "receiptID": "123-456-789",
   "sellerID": "987-654-321",
-  "sellerSSN": "091179-4829",
+  "sellerGovernmentID": "091179-4829",
   "sellerName": "the Great shop",
   "sellerEmailAddress": "the.great@shop.com",
   "date": "2017-06-05",
@@ -59,7 +59,7 @@ Required. String. Name of the seller.
 ### sellerID
 Optional. String. A globally unique ID of the shop. Currently, only we (Strimillinn) assign these identifiers so please contact us to get one. If you're in Iceland, you probably already have one. We'd like to make this a more open process in the future.
 
-### sellerSSN
+### sellerGovernmentID
 Optional. String. The national ID number of the seller (in Iceland, this would be the "kennitala").
 
 ### sellerName
