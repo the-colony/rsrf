@@ -43,12 +43,12 @@ RSRF is an easy to use format for electronic receipts. It was created to encoura
 
 ## The spec
 
-The spec defines three types of objects. A `receipt` is the base object. `receipt` contains `entry` objects that are lines that describe each purchased item. `receipt` objects can also contain `attachment` objects that are just blobs of data. an attachment could for example contain a rendered version of the receipt.
+The spec defines three types of objects. A `receipt` is the base object. `receipt` contains `entry` objects that are lines that describe each purchased item. `receipt` objects can also contain `attachment` objects that are just blobs of data. An attachment could for example contain a rendered image or PDF-version of the receipt.
 
 ## Receipt
 
 ### version
-Version of the spec used by the receipt.
+Required. Version of the spec used by the receipt.
 
 ### receiptID
 Required. String. This is the unique ID of your receipt within your store.
@@ -60,7 +60,7 @@ Required. String. Name of the seller.
 Optional. String. A globally unique ID of the shop. Currently, only we (Strimillinn) assign these identifiers so please contact us to get one. If you're in Iceland, you probably already have one. We'd like to make this a more open process in the future.
 
 ### sellerSSN
-Optional. String. optional. The national ID number of the seller (in Iceland, this would be the "kennitala").
+Optional. String. The national ID number of the seller (in Iceland, this would be the "kennitala").
 
 ### sellerName
 Optional. String. E-mail address of the seller.
@@ -101,13 +101,13 @@ Required. Quantity purchased, either number of units, weight etc.
 Required. Price of each unit of the purchased product.
 
 ### totalAmount
-Required. Total amount paid
+Required. Total amount paid.
 
 ### productCode
 Optional. Product number (UPC) of the purchased product.
 
 ### discountPercentage
-Optional. Discount percentage, if applicable. Formatted as a decimal (0.10 for 10%)
+Optional. Discount percentage, if applicable. Formatted as a decimal (0.10 for 10%).
 Only one of discountAmount or discountPercentage can be specified.
 
 ### discountAmount
@@ -115,7 +115,7 @@ Optional. Discount amount, if applicable.
 Only one of discountAmount or discountPercentage can be specified.
 
 ### vatPercentage
-Optional. Percentage of VAT paid.
+Optional. Percentage of VAT paid. Formatted as a decimal (0.24 for 24%).
 
 ## Attachment
 
@@ -123,4 +123,4 @@ Optional. Percentage of VAT paid.
 Required. Human readable document name. Displayed to the user. A document extension is required for the system to identify the document type when serving it to the user.
 
 ### data
-Required. Base64 encoded data of the document
+Required. Base64 encoded data of the document.
