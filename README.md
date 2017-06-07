@@ -7,10 +7,11 @@ RSRF is a proposal for an easy to use format for electronic receipts. It was cre
 The principal design goal for the format is simplicity. We're scratching our own itch and we do *not* want to create an all-encompassing format allowing for every edge-case that might occur when communicating data between sellers and customers. For that we already have the intricate and complex standards for wlectronic invoices.
 
 An RSRF-receipt will allow it's recipient to answer the following questions:
-* Where was I shopping
+* Where did I shop
+* When did I shop
 * What did I purchase
-* What quantity did I purchase
-* At what price did I purchase it
+* What quantity of each product did I purchase
+* At what price did I purchase the products
 
 Each field has some rationale behind it that works towards these goals.
 
