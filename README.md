@@ -57,7 +57,7 @@ Required. String. This is the unique ID of your receipt within your store.
 Required. String. Name of the seller.
 
 ### sellerID
-Optional. String. A globally unique ID of the shop. Currently, only we (Strimillinn) assign these identifiers so please contact us to get one. If you're in Iceland, you probably already have one. We'd like to make this a more open process in the future.
+Optional. String. A globally unique ID of the shop. Currently, only we (Strimillinn) assign these identifiers so please contact us to get one. If you're in Iceland, you probably already have one. We'd like to make this an open process in the future.
 
 ### sellerGovernmentID
 Optional. String. The national ID number of the seller (in Iceland, this would be the "kennitala").
