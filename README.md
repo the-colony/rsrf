@@ -2,7 +2,9 @@
 
 *`Please note that this is a draft spec and represents work in progress. We celebrate all comments and every attempt to assist us during the definition period`*
 
-RSRF is an easy to use format for electronic receipts. It was created to encourage and facilitate the creation and exchange of electronic receipts.
+RSRF is a proposal for an easy to use format for electronic receipts. It was created to encourage and facilitate the creation and exchange of electronic receipts.
+
+Please note that the principal design goal for the format is simplicity. We do not want to create an all-encompassing format allowing for every edge-case in communicating electronic data between sellers and their customers. For that we already have standards for Electronic invoices that are far more intricate and complex.
 
 ## Example receipt
 
