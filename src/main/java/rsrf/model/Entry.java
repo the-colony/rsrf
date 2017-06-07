@@ -37,7 +37,7 @@ public class Entry {
 	/**
 	 * Total price of the entry.
 	 */
-	public BigDecimal total;
+	public BigDecimal totalAmount;
 
 	/**
 	 * VAT percentage applied as a decimal (0.24 for 24%)

@@ -1,22 +1,21 @@
 package rsrf.model;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.List;
-import java.util.TimeZone;
 
 public class Receipt {
+
+	public int version;
 
 	/**
 	 * Globally unique receipt identifier
 	 */
-	public String receiptUniqueID;
+	public String receiptID;
 
 	/**
 	 * Globally unique seller identifier. Don't have an ID but want one? Call us.
 	 */
-	public String sellerUniqueID;
+	public String sellerID;
 
 	/**
 	 * National ID number (kennitala) of the seller.
@@ -41,17 +40,17 @@ public class Receipt {
 	/**
 	 * Date of receipt. Format as specified by ISO-8601
 	 */
-	public LocalDate date;
+	public String date;
 
 	/**
 	 * Time of receipt. Format as specified by ISO-8601
 	 */
-	public LocalTime time;
+	public String time;
 
 	/**
 	 * Time zone of receipt. Format as specified by ISO-8601
 	 */
-	public TimeZone timeZone;
+	public String timeZone;
 
 	/**
 	 * Code of the currency, as specified by ISO-4217
