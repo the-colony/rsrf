@@ -5,12 +5,15 @@ import java.util.List;
 
 public class Receipt {
 
-	public int version;
+	/**
+	 * The version of the receipt spec, as specified by semantic versioning.
+	 */
+	public String version;
 
 	/**
 	 * Globally unique receipt identifier
 	 */
-	public String receiptID;
+	public String id;
 
 	/**
 	 * Globally unique seller identifier. Don't have an ID but want one? Call us.
