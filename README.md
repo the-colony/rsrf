@@ -20,11 +20,13 @@ Each field has some rationale behind it that works towards these goals.
 ```
 {
   "version": "1",
-  "receiptID": "123-456-789",
-  "sellerID": "987-654-321",
-  "sellerGovernmentID": "091179-4829",
-  "sellerName": "the Great shop",
-  "sellerEmailAddress": "the.great@shop.com",
+  "id": "123-456-789",
+  "seller": {
+    "id": "987-654-321",
+    "governmentID": "091179-4829",
+    "name": "the Great shop",
+    "emailAddress": "the.great@shop.com"
+  },
   "date": "2017-06-05",
   "time": "18:08:45.641",
   "timeZone": "GMT",
