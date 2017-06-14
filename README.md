@@ -21,17 +21,17 @@ Each field has some rationale behind it that works towards these goals.
 {
   "version": "1",
   "id": "123-456-789",
+  "date": "2017-06-05",
+  "time": "18:08:45.641",
+  "timeZone": "GMT",
+  "totalAmount": 844,
+  "currencyCode": "ISK",
   "seller": {
     "id": "987-654-321",
     "governmentID": "091179-4829",
     "name": "the Great shop",
     "emailAddress": "the.great@shop.com"
   },
-  "date": "2017-06-05",
-  "time": "18:08:45.641",
-  "timeZone": "GMT",
-  "currencyCode": "ISK",
-  "totalAmount": 844,
   "entries": [
     {
       "description": "Soylent Industries Green no. 3",
