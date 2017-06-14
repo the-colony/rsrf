@@ -7,7 +7,7 @@ public class Entry {
 	/**
 	 * Description of the product purchased
 	 */
-	public String text;
+	public String description;
 
 	/**
 	 * Product number (UPC) of the purchased product.

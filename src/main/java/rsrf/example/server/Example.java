@@ -55,7 +55,7 @@ public class Example {
 		receipt.entries = new ArrayList<>();
 
 		Entry e1 = new Entry();
-		e1.text = "Milk 1L";
+		e1.description = "Milk 1L";
 		e1.unitPrice = new BigDecimal( "155" );
 		e1.productCode = "5690527101004";
 		e1.quantity = new BigDecimal( "1" );
@@ -64,7 +64,7 @@ public class Example {
 		receipt.entries.add( e1 );
 
 		Entry e2 = new Entry();
-		e2.text = "Whole grain bread, 770g";
+		e2.description = "Whole grain bread, 770g";
 		e2.unitPrice = new BigDecimal( "387" );
 		e2.productCode = "5690568010235";
 		e2.quantity = new BigDecimal( "2" );
