@@ -63,26 +63,8 @@ The spec defines three types of objects. A `receipt` is the base object. `receip
 ### version
 Required. Version of the spec used by the receipt.
 
-### receiptID
+### id
 Required. String. This is the unique ID of your receipt within your store.
-
-### sellerName
-Required. String. Name of the seller.
-
-### sellerID
-Optional. String. A globally unique ID of the shop. Currently, only we (Strimillinn) assign these identifiers so please contact us to get one. If you're in Iceland, you probably already have one. We'd like to make this an open process in the future.
-
-### sellerGovernmentID
-Optional. String. The national ID number of the seller (in Iceland, this would be the "kennitala").
-
-### sellerName
-Optional. String. E-mail address of the seller.
-
-### sellerGeoLocation
-Optional. String. Location of the shop as specified by ISO-6709.
-
-### timeZone
-Required. Timezone of seller. String, formatted as specified by ISO-8601.
 
 ### date
 Required. Date of purchase. String formatted as specified by ISO-8601.
@@ -90,17 +72,45 @@ Required. Date of purchase. String formatted as specified by ISO-8601.
 ### time
 Optional. Time of purchase. String, formatted as specified by ISO-8601.
 
-### currencyCode
-Required. String. Code of the currency, as specified by ISO-4217.
+### timeZone
+Required. Timezone of seller. String, formatted as specified by ISO-8601.
+
+### discountPercentage
+Optional. Discount percentage, if applicable. Formatted as a decimal (0.10 for 10%).
+Only one of discountAmount or discountPercentage can be specified.
+
+### discountAmount
+Optional. Discount amount, if applicable.
+Only one of discountAmount or discountPercentage can be specified.
 
 ### totalAmount
 Required. Total amount paid.
+
+### currencyCode
+Required. String. Code of the currency, as specified by ISO-4217.
+
+### seller
+Required. Information on the seller, as specified by the `Seller` object.
 
 ### entries
 Optional. List of `Entry` objects denoting what was purcased.
 
 ### attachments
 Optional. List of `Attachment` objects containing, for example, a rendered image or PDF of the receipt, the shop logo etc.
+
+## Seller
+
+### id
+Optional. String. A globally unique ID of the shop. Currently, only we (Strimillinn) assign these identifiers so please contact us to get one. If you're in Iceland, you probably already have one. We'd like to make this an open process in the future.
+
+### governmentID
+Optional. String. The national ID number of the seller (in Iceland, this would be the "kennitala").
+
+### name
+Optional. String. E-mail address of the seller.
+
+### geoLocation
+Optional. String. Location of the shop as specified by ISO-6709.
 
 ## Entry
 
