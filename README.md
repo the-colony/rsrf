@@ -34,7 +34,7 @@ Each field has some rationale behind it that works towards these goals.
   "totalAmount": 844,
   "entries": [
     {
-      "text": "Soylent Industries Green no. 3",
+      "description": "Soylent Industries Green no. 3",
       "productCode": "5690527101004",
       "quantity": 1,
       "unitPrice": 155,
@@ -42,7 +42,7 @@ Each field has some rationale behind it that works towards these goals.
       "vatPercentage": 0.11
     },
     {
-      "text": "Gurble Farms Whole Grain Bread",
+      "description": "Gurble Farms Whole Grain Bread",
       "productCode": "5690568010235",
       "quantity": 2,
       "unitPrice": 387,
@@ -104,7 +104,7 @@ Optional. List of `Attachment` objects containing, for example, a rendered image
 
 ## Entry
 
-### text
+### description
 Required. Description of the purchased product.
 
 ### quantity
