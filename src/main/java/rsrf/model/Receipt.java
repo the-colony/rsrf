@@ -15,6 +15,9 @@ public class Receipt {
 	 */
 	public String id;
 
+	/**
+	 * Information about the seller.
+	 */
 	public Seller seller;
 
 	/**
@@ -36,6 +39,16 @@ public class Receipt {
 	 * Code of the currency, as specified by ISO-4217
 	 */
 	public String currency;
+
+	/**
+	 * Discount as a percentage
+	 */
+	public BigDecimal discountPercentage;
+
+	/**
+	 * Discount as an amount
+	 */
+	public BigDecimal discountAmount;
 
 	/**
 	 * Total paid amount
