@@ -15,30 +15,7 @@ public class Receipt {
 	 */
 	public String id;
 
-	/**
-	 * Globally unique seller identifier. Don't have an ID but want one? Call us.
-	 */
-	public String sellerID;
-
-	/**
-	 * National ID number (kennitala) of the seller.
-	 */
-	public String sellerSSN;
-
-	/**
-	 * Name of the seller
-	 */
-	public String sellerName;
-
-	/**
-	 * E-mail address of the seller
-	 */
-	public String sellerEmailAddress;
-
-	/**
-	 * Location of the shop as specified by ISO-6709
-	 */
-	public String geoLocation;
+	public Seller seller;
 
 	/**
 	 * Date of receipt. Format as specified by ISO-8601

@@ -13,6 +13,7 @@ import com.google.gson.GsonBuilder;
 
 import rsrf.model.Entry;
 import rsrf.model.Receipt;
+import rsrf.model.Seller;
 
 public class Example {
 
@@ -37,17 +38,20 @@ public class Example {
 
 	private static Receipt receipt1thatHasNoAttachments() throws IOException {
 		final Receipt receipt = new Receipt();
-		receipt.receiptID = "123-456-789";
-		receipt.sellerSSN = "091179-4829";
-		receipt.sellerName = "the Great shop";
-		receipt.sellerEmailAddress = "the.great@shop.com";
-		receipt.sellerID = "987-654-321";
+		receipt.id = "123-456-789";
+
+		receipt.seller = new Seller();
+		receipt.seller.governmentID = "091179-4829";
+		receipt.seller.name = "the Great shop";
+		receipt.seller.emailAddress = "the.great@shop.com";
+		receipt.seller.id = "987-654-321";
+
 		receipt.totalAmount = new BigDecimal( "844" );
 		receipt.currency = "ISK";
 		receipt.date = LocalDate.now().toString();
 		receipt.time = LocalTime.now().toString();
 		receipt.timeZone = "GMT";
-		receipt.version = 1;
+		receipt.version = "1.0.0";
 		receipt.entries = new ArrayList<>();
 
 		Entry e1 = new Entry();
@@ -79,10 +83,13 @@ public class Example {
 
 	private static Receipt receipt2thatHasAttachments() {
 		final Receipt receipt = new Receipt();
-		receipt.sellerSSN = "123456-7890";
-		receipt.sellerEmailAddress = "frábær@verslun.is";
-		receipt.sellerID = "i-am-even-more-unique";
-		receipt.receiptID = "i-am-so-unique";
+		receipt.id = "i-am-so-unique";
+
+		receipt.seller = new Seller();
+		receipt.seller.governmentID = "123456-7890";
+		receipt.seller.emailAddress = "frábær@verslun.is";
+		receipt.seller.id = "i-am-even-more-unique";
+
 		return receipt;
 	}
 }
